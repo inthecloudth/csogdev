@@ -550,9 +550,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#72-review-or-adjust-settings" class="md-nav__link">
+  <a href="#72-include-g-ca-pilot-users" class="md-nav__link">
     <span class="md-ellipsis">
-      7.2 Review or adjust settings
+      7.2 Include G CA Pilot Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-exclude-break-glass-and-service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Exclude break-glass and service accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-access-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Access controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-turn-on-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Turn-on policy
     </span>
   </a>
   
@@ -865,9 +892,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#72-review-or-adjust-settings" class="md-nav__link">
+  <a href="#72-include-g-ca-pilot-users" class="md-nav__link">
     <span class="md-ellipsis">
-      7.2 Review or adjust settings
+      7.2 Include G CA Pilot Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-exclude-break-glass-and-service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Exclude break-glass and service accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-access-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Access controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-turn-on-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Turn-on policy
     </span>
   </a>
   
@@ -1074,18 +1128,21 @@ Azure CLI</p>
 <p><img alt="alt text" src="../image-80.png" /></p>
 <p><img alt="alt text" src="../image-81.png" /></p>
 <h2 id="7-require-compliant-or-microsoft-entra-hybrid-joined-device-or-multifactor-authentication-for-all-users">7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users</h2>
-<p>ถ้าเราใช้ Intune จะสามารถตรวจสอบ device ว่า compliance ตามที่องค์กรกำหนดไหม เช่น ถ้า Windows firewall, antivirus, และ antispyware ถูกเปิดให้ทำงานอยู่ ก็จะถือว่า device เป็น compliant เป็นต้น</p>
-<p>หรือบางองค์กรก็ enable Hybrid Join แล้ว</p>
-<p>ดังนั้น ถ้าเราต้องการ bypass MFA ให้กับ device ที่ compliant และ Entra Hybrid joined devices ก็สามารถสร้าง policy นี้ได้เลยครับ</p>
+<p>หากต้องการ bypass device ที่เป็น Hybrid joined device แล้ว หรือ device ที่ compliant ใน Intune ก็ใช้ policy ตัวนี้ได้ครับ</p>
 <h3 id="71-create-a-policy">7.1 Create a policy</h3>
 <p><img alt="alt text" src="../image-82.png" /></p>
 <p><img alt="alt text" src="../image-83.png" /></p>
-<h3 id="72-review-or-adjust-settings">7.2 Review or adjust settings</h3>
 <p><img alt="alt text" src="../image-84.png" /></p>
+<h3 id="72-include-g-ca-pilot-users">7.2 Include G CA Pilot Users</h3>
+<p>แก้จาก All users</p>
 <p><img alt="alt text" src="../image-85.png" /></p>
+<p>เป็น G CA Pilot Users</p>
 <p><img alt="alt text" src="../image-104.png" /></p>
+<h3 id="73-exclude-break-glass-and-service-accounts">7.3 Exclude break-glass and service accounts</h3>
 <p><img alt="alt text" src="../image-110.png" /></p>
+<h3 id="74-access-controls">7.4 Access controls</h3>
 <p><img alt="alt text" src="../image-88.png" /></p>
+<h3 id="75-turn-on-policy">7.5 Turn-on policy</h3>
 <p><img alt="alt text" src="../image-89.png" /></p>
 <p><img alt="alt text" src="../image-90.png" /></p>
 <h2 id="8-require-compliant-device">8. Require compliant device</h2>
