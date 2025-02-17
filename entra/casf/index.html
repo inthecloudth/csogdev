@@ -537,6 +537,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-create-a-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Create a policy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-review-or-adjust-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Review or adjust settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -828,6 +852,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-create-a-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Create a policy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-review-or-adjust-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Review or adjust settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1026,41 +1074,27 @@ Azure CLI</p>
 <p><img alt="alt text" src="../image-80.png" /></p>
 <p><img alt="alt text" src="../image-81.png" /></p>
 <h2 id="7-require-compliant-or-microsoft-entra-hybrid-joined-device-or-multifactor-authentication-for-all-users">7. Require compliant or Microsoft Entra hybrid joined device or multifactor authentication for all users</h2>
-<p>Organizations who deploy Microsoft Intune can use the information returned from their devices to identify devices that meet compliance requirements such as:</p>
-<p>Requiring a PIN to unlock
-Requiring device encryption
-Requiring a minimum or maximum operating system version
-Requiring a device isn't jailbroken or rooted
-Policy compliance information is sent to Microsoft Entra ID where Conditional Access decides to grant or block access to resources</p>
-<p>Requiring a Microsoft Entra hybrid joined device is dependent on your devices already being Microsoft Entra hybrid joined</p>
+<p>ถ้าเราใช้ Intune จะสามารถตรวจสอบ device ว่า compliance ตามที่องค์กรกำหนดไหม เช่น ถ้า Windows firewall, antivirus, และ antispyware ถูกเปิดให้ทำงานอยู่ ก็จะถือว่า device เป็น compliant เป็นต้น</p>
+<p>หรือบางองค์กรก็ enable Hybrid Join แล้ว</p>
+<p>ดังนั้น ถ้าเราต้องการ bypass MFA ให้กับ device ที่ compliant และ Entra Hybrid joined devices ก็สามารถสร้าง policy นี้ได้เลยครับ</p>
+<h3 id="71-create-a-policy">7.1 Create a policy</h3>
 <p><img alt="alt text" src="../image-82.png" /></p>
 <p><img alt="alt text" src="../image-83.png" /></p>
+<h3 id="72-review-or-adjust-settings">7.2 Review or adjust settings</h3>
 <p><img alt="alt text" src="../image-84.png" /></p>
 <p><img alt="alt text" src="../image-85.png" /></p>
-<p>xxx</p>
 <p><img alt="alt text" src="../image-104.png" /></p>
 <p><img alt="alt text" src="../image-110.png" /></p>
 <p><img alt="alt text" src="../image-88.png" /></p>
 <p><img alt="alt text" src="../image-89.png" /></p>
 <p><img alt="alt text" src="../image-90.png" /></p>
 <h2 id="8-require-compliant-device">8. Require compliant device</h2>
-<p>Some organizations might not be ready to require device complance for all users, these organizations might instead choose to deploy the following policies:</p>
-<p>Require compliant or Microsoft Entra hybrid joined device for their administrators
-Require a compliant device, Microsoft Entra hybrid joined device, OR multifactor authentication for all users
-Block unknown or unsupported device platforms
-Disable browser persistence</p>
+<p>หลายๆ องค์กรน่าจะยังไม่พร้อมที่จะ require ให้ device ทุกเครื่องจะต้อง compliance ก่อนเข้าใช้บริการ</p>
+<p>ดังนั้นข้อนี้เราจะยังไม่ทำตอนนี้ ให้เราข้ามไป</p>
 <p><img alt="alt text" src="../image-91.png" /></p>
-<p><img alt="alt text" src="../image-92.png" /></p>
-<p><img alt="alt text" src="../image-93.png" /></p>
-<p><img alt="alt text" src="../image-94.png" /></p>
-<p>xxx</p>
-<p><img alt="alt text" src="../image-105.png" /></p>
-<p><img alt="alt text" src="../image-111.png" /></p>
-<p><img alt="alt text" src="../image-97.png" /></p>
-<p><img alt="alt text" src="../image-98.png" /></p>
-<p><img alt="alt text" src="../image-106.png" /></p>
-<p><img alt="alt text" src="../image-107.png" /></p>
-<p><img alt="alt text" src="../image-108.png" /></p>
+<p>แล้วใช้ policy แค่ 7 ตัว สำหรับ Secure foundation ก่อนก็พอนะครับ</p>
+<p><img alt="alt text" src="../image-90.png" /></p>
+<p>...</p>
 
 
 
